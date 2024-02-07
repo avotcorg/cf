@@ -4,17 +4,17 @@ addEventListener('fetch', event => {
   
   // 设置优选地址，不带端口号默认8443，不支持非TLS订阅生成
   let addresses = [
-	'cdn'
+	'cdn.kaiche.tk#TG→ @warp_key 频道防失联'
   ];
   
   // 设置优选地址api接口
   let addressesapi = [
-	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt' //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/avotcorg/cf/main/addressesapi.txt' //可参考内容格式 自行搭建。
   ];
   
   let DLS = 4;
   let addressescsv = [
-	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv'
+	//'https://raw.githubusercontent.com/avotcorg/cf/main/addressescsv.csv'
   ];
   
   async function getAddressesapi() {
