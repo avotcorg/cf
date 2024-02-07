@@ -111,12 +111,12 @@ addEventListener('fetch', event => {
   async function handleRequest(request) {
 	const url = new URL(request.url);
 	let host = "cdn.kaiche.tk";
-	let uuid = "7f14e42a-f453-4c39-a762-019ee493237d";
+	let uuid = "XXX";
 	let path = "/?ed=2048";
   
 	if (url.pathname.includes("/auto") || url.pathname.includes("/404") || url.pathname.includes("/sos")) {
 		host = "cdn.kaiche.tk";
-		uuid = "7f14e42a-f453-4c39-a762-019ee493237d";
+		uuid = "XXX";
 		path = "/?ed=2048";
 
 	} else {
