@@ -4,19 +4,34 @@ addEventListener('fetch', event => {
   
   // 设置优选地址，不带端口号默认8443，不支持非TLS订阅生成
   let addresses = [
-	'cdn.kaiche.tk#TG→ @warp_key 频道防失联'
+	'cdn.idouyin.tk#TG频道@wrrp_key频道优选'
   ];
   
   // 设置优选地址api接口
   let addressesapi = [
-	'https://raw.githubusercontent.com/avotcorg/cf/main/addressesapi.txt' //可参考内容格式 自行搭建。
+	'https://cdn.jsdelivr.us/gh/avotcorg/cf_sub@master/cfip.txt' //可参考内容格式 自行搭建。
   ];
   
-  let DLS = 4;
+  let DLS = 4;//速度下限
   let addressescsv = [
-	//'https://raw.githubusercontent.com/avotcorg/cf/main/addressescsv.csv'
+	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv' //iptest测速结果文件。
   ];
   
+  let subconverter = "api.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+  let subconfig = "https://raw.githubusercontent.com/cmliu/edgetunnel/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅配置文件
+
+  let link = '';
+  let edgetunnel = 'ed';
+  let RproxyIP = 'false';
+  let proxyIPs = [
+	'cdn.xn--b6gac.eu.org',
+	'cdn-all.xn--b6gac.eu.org',
+	'edgetunnel.anycast.eu.org',
+  ];
+  let CMproxyIPs = [
+	//{ proxyIP: "proxyip.fxxk.dedyn.io", type: "US" },
+	//{ proxyIP: "proxyip.sg.fxxk.dedyn.io", type: "SG" },
+  ];
   async function getAddressesapi() {
 	  if (!addressesapi || addressesapi.length === 0) {
 		return [];
@@ -35,7 +50,7 @@ addEventListener('fetch', event => {
 	
 		  const text = await response.text();
 		  const lines = text.split('\n');
-		  const regex = /^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(:\d+)?(#\w+)?$/;
+		  const regex = /^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(:\d+)?(#.*)?$/;
 	
 		  const apiAddresses = lines.map(line => {
 			const match = line.match(regex);
@@ -90,7 +105,7 @@ addEventListener('fetch', event => {
 			const columns = lines[i].split(',');
 	
 			// 检查TLS是否为"TRUE"且速度大于DLS
-			if (columns[tlsIndex] === 'TRUE' && parseFloat(columns[speedIndex]) > DLS) {
+			if (columns[tlsIndex].toUpperCase() === 'TRUE' && parseFloat(columns[speedIndex]) > DLS) {
 			  const ipAddress = columns[ipAddressIndex];
 			  const port = columns[portIndex];
 			  const dataCenter = columns[dataCenterIndex];
@@ -107,17 +122,86 @@ addEventListener('fetch', event => {
 	
 	  return newAddressescsv;
   }
-  
+
+  let protocol;
   async function handleRequest(request) {
+	const userAgentHeader = request.headers.get('User-Agent');
+	const userAgent = userAgentHeader ? userAgentHeader.toLowerCase() : "null";
 	const url = new URL(request.url);
-	let host = "cdn.kaiche.tk";
-	let uuid = "XXX";
-	let path = "/?ed=2048";
-  
+	let host = "";
+	let uuid = "";
+	let path = "";
+
 	if (url.pathname.includes("/auto") || url.pathname.includes("/404") || url.pathname.includes("/sos")) {
-		host = "cdn.kaiche.tk";
-		uuid = "XXX";
-		path = "/?ed=2048";
+		host = "tz.idouyin.gq";
+		uuid = "7f14e42a-f453-4c39-a762-019ee493237d";
+		path = "/?end=TG频道@wrrp_key";
+		//edgetunnel = 'otc';
+		//RproxyIP = 'true';
+
+	} else if (url.pathname.includes("/tizi")) {
+		let sites = [
+			{ url: 'https://raw.githubusercontent.com/Alvin9999/pac2/master/xray/config.json',type: "xray"},
+			{ url: 'https://raw.githubusercontent.com/Alvin9999/pac2/master/xray/1/config.json',type: "xray" },
+			{ url: 'https://raw.githubusercontent.com/Alvin9999/pac2/master/xray/2/config.json',type: "xray"},
+			{ url: 'https://raw.githubusercontent.com/Alvin9999/pac2/master/xray/3/config.json',type: "xray"},
+			{ url: 'https://gitlab.com/free9999/ipupdate/-/raw/master/xray/config.json',type: "xray"},
+			{ url: 'https://gitlab.com/free9999/ipupdate/-/raw/master/xray/2/config.json',type: "xray"},
+		];
+
+		const maxRetries = 6;
+		let retryCount = 0;
+		let data = null;
+
+		while (retryCount < maxRetries) {
+		  const randomSite = sites[Math.floor(Math.random() * sites.length)];
+		  const response = await fetch(randomSite.url);
+
+			if (response.ok) {
+				data = await response.json();
+				if (!data) {
+					console.error('Failed to fetch data after multiple retries.');
+					// 这里你可以选择如何处理失败，比如返回错误响应或执行其他逻辑
+					return new Response('Failed to fetch data after multiple retries.', {
+					status: 500,
+					headers: { 'content-type': 'text/plain; charset=utf-8' },
+					});
+				}
+			
+				processXray(data);
+			
+				function processXray(data) {
+					let outboundConfig = data.outbounds[0];
+					host = outboundConfig?.streamSettings?.wsSettings?.headers?.Host;
+					uuid = outboundConfig.settings?.vnext?.[0]?.users?.[0]?.id;
+					path = outboundConfig?.streamSettings?.wsSettings?.path;
+					protocol = outboundConfig.protocol;
+				}
+
+				if (protocol.toLowerCase() === 'vless') {
+					break; // 成功获取数据时跳出循环
+				}
+			} else {
+				console.error('Failed to fetch data. Retrying...');
+				retryCount++;
+			}
+		}
+
+        const hy2Url = "https://sub10.deno.dev/?token=otc";
+
+        try {
+            const subconverterResponse = await fetch(hy2Url);
+
+            if (!subconverterResponse.ok) {
+                throw new Error(`Error fetching lzUrl: ${subconverterResponse.status} ${subconverterResponse.statusText}`);
+            }
+
+            const base64Text = await subconverterResponse.text();
+            link = atob(base64Text); // 进行 Base64 解码
+
+        } catch (error) {
+            // 错误处理
+        }
 
 	} else {
 		host = url.searchParams.get('host');
@@ -127,8 +211,8 @@ addEventListener('fetch', event => {
 		if (!url.pathname.includes("/sub")) {
 			const workerUrl = url.origin + url.pathname;
 			const responseText = `
-		路径必须包含 "/sub"
-		${workerUrl}sub?host=[your host]&uuid=[your uuid]&path=[your path]
+友情提醒：路径必须包含 "/sub" 及下面示例 替换必须把[] 包含括号都替换掉
+		${workerUrl}sub?host=[你的伪装域名 host]&uuid=[你的用户ID uuid]&path=[你的路径 path]
 			`;
 		
 			return new Response(responseText, {
@@ -140,8 +224,8 @@ addEventListener('fetch', event => {
 		  if (!host || !uuid) {
 			const workerUrl = url.origin + url.pathname;
 			const responseText = `
-		缺少必填参数：host 和 uuid
-		${workerUrl}?host=[your host]&uuid=[your uuid]&path=[your path]
+友情提醒：缺少必填参数：host 和 uuid 及下面示例 替换必须把[] 包含括号都替换掉
+		${workerUrl}?host=[你的伪装域名 host]&uuid=[你的用户ID uuid]&path=[你的路径 path]
 			`;
 		
 			return new Response(responseText, {
@@ -151,55 +235,113 @@ addEventListener('fetch', event => {
 		  }
 		
 		  if (!path || path.trim() === '') {
-			path = encodeURIComponent('/?ed=2048');
+			path = encodeURIComponent('/?end=TG频道@wrrp_key');
 		  } else {
 			// 如果第一个字符不是斜杠，则在前面添加一个斜杠
 			path = (path[0] === '/') ? encodeURIComponent(path) : encodeURIComponent('/' + path);
 		  }
 	}
   
-	  const newAddressesapi = await getAddressesapi();
-	  const newAddressescsv = await getAddressescsv();
-	  addresses = addresses.concat(newAddressesapi);
-	  addresses = addresses.concat(newAddressescsv);
+	if (userAgent.includes('telegram') || userAgent.includes('twitter') || userAgent.includes('miaoko')) {
+		return new Response('Hello World!');
+	} else if (userAgent.includes('clash')) {
+		const subconverterUrl = `https://${subconverter}/sub?target=clash&url=${encodeURIComponent(request.url)}&insert=false&config=${encodeURIComponent(subconfig)}&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true`;
+
+		try {
+		  const subconverterResponse = await fetch(subconverterUrl);
+	  
+		  if (!subconverterResponse.ok) {
+			throw new Error(`Error fetching subconverterUrl: ${subconverterResponse.status} ${subconverterResponse.statusText}`);
+		  }
+	  
+		  const subconverterContent = await subconverterResponse.text();
+	  
+		  return new Response(subconverterContent, {
+			headers: { 'content-type': 'text/plain; charset=utf-8' },
+		  });
+		} catch (error) {
+		  return new Response(`Error: ${error.message}`, {
+			status: 500,
+			headers: { 'content-type': 'text/plain; charset=utf-8' },
+		  });
+		}
+	} else if (userAgent.includes('sing-box') || userAgent.includes('singbox')){
+		const subconverterUrl = `https://${subconverter}/sub?target=singbox&url=${encodeURIComponent(request.url)}&insert=false&config=${encodeURIComponent(subconfig)}&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true`;
+
+		try {
+		  const subconverterResponse = await fetch(subconverterUrl);
+	  
+		  if (!subconverterResponse.ok) {
+			throw new Error(`Error fetching subconverterUrl: ${subconverterResponse.status} ${subconverterResponse.statusText}`);
+		  }
+	  
+		  const subconverterContent = await subconverterResponse.text();
+	  
+		  return new Response(subconverterContent, {
+			headers: { 'content-type': 'text/plain; charset=utf-8' },
+		  });
+		} catch (error) {
+		  return new Response(`Error: ${error.message}`, {
+			status: 500,
+			headers: { 'content-type': 'text/plain; charset=utf-8' },
+		  });
+		}
+	} else {
+		const newAddressesapi = await getAddressesapi();
+		const newAddressescsv = await getAddressescsv();
+		addresses = addresses.concat(newAddressesapi);
+		addresses = addresses.concat(newAddressescsv);
+	
+	  // 使用Set对象去重
+	  const uniqueAddresses = [...new Set(addresses)];
+	
+	  const responseBody = uniqueAddresses.map(address => {
+		let port = "8443";
+		let addressid = address;
+	
+		if (address.includes(':') && address.includes('#')) {
+		  const parts = address.split(':');
+		  address = parts[0];
+		  const subParts = parts[1].split('#');
+		  port = subParts[0];
+		  addressid = subParts[1];
+		} else if (address.includes(':')) {
+		  const parts = address.split(':');
+		  address = parts[0];
+		  port = parts[1];
+		} else if (address.includes('#')) {
+		  const parts = address.split('#');
+		  address = parts[0];
+		  addressid = parts[1];
+		}
+	
+		if (addressid.includes(':')) {
+		  addressid = addressid.split(':')[0];
+		}
+		
+		edgetunnel = url.searchParams.get('edgetunnel') || edgetunnel;
+		RproxyIP = url.searchParams.get('proxyip') || RproxyIP;
+		if (edgetunnel.trim() === 'otc' && RproxyIP.trim() === 'true') {
+			let matchedProxy = CMproxyIPs.find(proxy => proxy.type === addressid.toUpperCase());
+			if (matchedProxy) {
+				path = `/proxyIP=${matchedProxy.proxyIP}`;
+			} else {
+				const proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+				path = `/proxyIP=${proxyIP}`;
+			}
+		}
+		const vlessLink = `vless://${uuid}@${address}:${port}?encryption=none&security=tls&sni=${host}&fp=random&type=ws&host=${host}&path=${path}#${encodeURIComponent(addressid)}`;
+	
+		return vlessLink;
+	  }).join('\n');
+	
+	  const combinedContent = responseBody + '\n' + link; // 合并内容
+	  const base64Response = btoa(combinedContent); // 重新进行 Base64 编码
   
-	// 使用Set对象去重
-	const uniqueAddresses = [...new Set(addresses)];
+	  const response = new Response(base64Response, {
+		  headers: { 'content-type': 'text/plain' },
+	  });
   
-	const responseBody = uniqueAddresses.map(address => {
-	  let port = "8443";
-	  let addressid = address;
-  
-	  if (address.includes(':') && address.includes('#')) {
-		const parts = address.split(':');
-		address = parts[0];
-		const subParts = parts[1].split('#');
-		port = subParts[0];
-		addressid = subParts[1];
-	  } else if (address.includes(':')) {
-		const parts = address.split(':');
-		address = parts[0];
-		port = parts[1];
-	  } else if (address.includes('#')) {
-		const parts = address.split('#');
-		address = parts[0];
-		addressid = parts[1];
-	  }
-  
-	  if (addressid.includes(':')) {
-		addressid = addressid.split(':')[0];
-	  }
-  
-	  const vlessLink = `vless://${uuid}@${address}:${port}?encryption=none&security=tls&sni=${host}&fp=random&type=ws&host=${host}&path=${path}#${addressid}`;
-  
-	  return vlessLink;
-	}).join('\n');
-  
-	const base64Response = btoa(responseBody);
-  
-	const response = new Response(base64Response, {
-	  headers: { 'content-type': 'text/plain' },
-	});
-  
-	return response;
-  }
+	  return response;
+	}
+}
