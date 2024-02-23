@@ -9,7 +9,7 @@ addEventListener('fetch', event => {
   
   // 设置优选地址api接口
   let addressesapi = [
-	'https://cdn.jsdelivr.us/gh/avotcorg/cf_sub@master/cfip.txt' //可参考内容格式 自行搭建。
+	'https://cfip.qqqqqq.tk' //可参考内容格式 自行搭建。
   ];
   
   let DLS = 4;//速度下限
