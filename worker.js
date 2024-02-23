@@ -18,7 +18,7 @@ addEventListener('fetch', event => {
   ];
   
   let subconverter = "api.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-  let subconfig = "https://raw.githubusercontent.com/cmliu/edgetunnel/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅配置文件
+  let subconfig = ""; //订阅配置文件
 
   let link = '';
   let edgetunnel = 'ed';
@@ -133,9 +133,9 @@ addEventListener('fetch', event => {
 	let path = "";
 
 	if (url.pathname.includes("/auto") || url.pathname.includes("/404") || url.pathname.includes("/sos")) {
-		host = "tz.idouyin.gq";
-		uuid = "7f14e42a-f453-4c39-a762-019ee493237d";
-		path = "/?end=TG频道@wrrp_key";
+		host = "xx.idouyin.gq";
+		uuid = "xx14e42a-f453-4c39-a762-019ee493237d";
+		path = "/?end=TG频道@warp_key";
 		//edgetunnel = 'otc';
 		//RproxyIP = 'true';
 
@@ -187,7 +187,7 @@ addEventListener('fetch', event => {
 			}
 		}
 
-        const hy2Url = "https://sub10.deno.dev/?token=otc";
+        const hy2Url = "https://xxxx.xxxx";
 
         try {
             const subconverterResponse = await fetch(hy2Url);
