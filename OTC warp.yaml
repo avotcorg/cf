@@ -118,12 +118,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-1
-  port: 8886
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
+  name: ☁️ TG @Warp_Key-1
+  port: 943
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.192.43
+  server: 162.159.195.15
   type: wireguard
   udp: true
 - dns:
@@ -131,12 +131,77 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-2
+  name: ☁️ TG @Warp_Key-2
+  port: 943
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 162.159.192.210
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: ☁️ TG @Warp_Key-3
+  port: 943
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 188.114.99.175
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: ☁️ TG @Warp_Key-4
+  port: 854
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 188.114.99.239
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: ☁️ TG @Warp_Key-5
+  port: 943
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 188.114.99.216
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: ☁️ TG @Warp_Key-6
+  port: 1010
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  remote-dns-resolve: true
+  server: 162.159.195.107
+  type: wireguard
+  udp: true
+- dns:
+  - 1.1.1.1
+  - 1.0.0.1
+  ip: 172.16.0.2
+  mtu: 1280
+  name: ☁️ TG @Warp_Key-7
   port: 3854
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.192.52
+  server: 188.114.97.39
   type: wireguard
   udp: true
 - dns:
@@ -144,12 +209,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-3
-  port: 8886
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
+  name: ☁️ TG @Warp_Key-8
+  port: 1010
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.192.248
+  server: 188.114.97.115
   type: wireguard
   udp: true
 - dns:
@@ -157,12 +222,12 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-4
-  port: 3854
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
+  name: ☁️ TG @Warp_Key-9
+  port: 1010
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.195.129
+  server: 188.114.97.200
   type: wireguard
   udp: true
 - dns:
@@ -170,107 +235,42 @@ proxies:
   - 1.0.0.1
   ip: 172.16.0.2
   mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-5
-  port: 8886
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
+  name: ☁️ TG @Warp_Key-10
+  port: 1010
+  private-key: SHVqHEGI7k2+OQ/oWMmWY2EQObbRQjRBdDPimh0h1WY=
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   remote-dns-resolve: true
-  server: 162.159.195.40
-  type: wireguard
-  udp: true
-- dns:
-  - 1.1.1.1
-  - 1.0.0.1
-  ip: 172.16.0.2
-  mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-6
-  port: 3854
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  remote-dns-resolve: true
-  server: 162.159.195.146
-  type: wireguard
-  udp: true
-- dns:
-  - 1.1.1.1
-  - 1.0.0.1
-  ip: 172.16.0.2
-  mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-7
-  port: 3854
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  remote-dns-resolve: true
-  server: 162.159.192.114
-  type: wireguard
-  udp: true
-- dns:
-  - 1.1.1.1
-  - 1.0.0.1
-  ip: 172.16.0.2
-  mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-8
-  port: 3854
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  remote-dns-resolve: true
-  server: 162.159.195.40
-  type: wireguard
-  udp: true
-- dns:
-  - 1.1.1.1
-  - 1.0.0.1
-  ip: 172.16.0.2
-  mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-9
-  port: 8886
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  remote-dns-resolve: true
-  server: 162.159.192.20
-  type: wireguard
-  udp: true
-- dns:
-  - 1.1.1.1
-  - 1.0.0.1
-  ip: 172.16.0.2
-  mtu: 1280
-  name: 🇺🇸 TG @Warp_Key-10
-  port: 8886
-  private-key: SGLuWQWYQAcfzSqbNEwChIBjnqQahZdSsORm752/Nns=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  remote-dns-resolve: true
-  server: 162.159.192.31
+  server: 188.114.98.119
   type: wireguard
   udp: true
 proxy-groups:
 - name: 🌐 节点选择
   proxies:
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - interval: 300
   name: 💡 自动选择
   proxies:
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: url-test
   url: http://www.gstatic.com/generate_204
 - name: 👉 国内网站
@@ -278,412 +278,412 @@ proxy-groups:
   - 🌍 全球直连
   - 🌐 节点选择
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 👉 国外网站
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🤖 OPENAI
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 👉 例外网站
   proxies:
   - 🌍 全球直连
   - 🌐 节点选择
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📲 聊天软件
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🌏 日韩媒体
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🌏 港台媒体
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🌍 国外媒体
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📹 YouTube
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🎵 Spotify
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🎬 NETFLIX
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🎬 Disney+
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🎬 HBO
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🎬 Prime
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📺 Emby
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📺 TikTok
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📺 巴哈姆特
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📺 哔哩哔哩
   proxies:
   - 🌍 全球直连
   - 🌐 节点选择
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📺 爱奇艺
   proxies:
   - 🌍 全球直连
   - 🌐 节点选择
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🌍 全球直连
   - 🌐 节点选择
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🧩 微软服务
   proxies:
   - 🌍 全球直连
   - 🌐 节点选择
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🎮 游戏平台
   proxies:
   - 🌐 节点选择
   - 💡 自动选择
   - 🌍 全球直连
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 📥 BT & PT
   proxies:
   - 🌍 全球直连
   - 🌐 节点选择
   - 💡 自动选择
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🌍 全球直连
   proxies:
   - DIRECT
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🛡 全球拦截
   proxies:
   - REJECT
   - DIRECT
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 - name: 🍃 应用净化
   proxies:
   - REJECT
   - DIRECT
-  - 🇺🇸 TG @Warp_Key-1
-  - 🇺🇸 TG @Warp_Key-2
-  - 🇺🇸 TG @Warp_Key-3
-  - 🇺🇸 TG @Warp_Key-4
-  - 🇺🇸 TG @Warp_Key-5
-  - 🇺🇸 TG @Warp_Key-6
-  - 🇺🇸 TG @Warp_Key-7
-  - 🇺🇸 TG @Warp_Key-8
-  - 🇺🇸 TG @Warp_Key-9
-  - 🇺🇸 TG @Warp_Key-10
+  - ☁️ TG @Warp_Key-1
+  - ☁️ TG @Warp_Key-2
+  - ☁️ TG @Warp_Key-3
+  - ☁️ TG @Warp_Key-4
+  - ☁️ TG @Warp_Key-5
+  - ☁️ TG @Warp_Key-6
+  - ☁️ TG @Warp_Key-7
+  - ☁️ TG @Warp_Key-8
+  - ☁️ TG @Warp_Key-9
+  - ☁️ TG @Warp_Key-10
   type: select
 rules:
 - DOMAIN-KEYWORD,admarvel,🛡 全球拦截
